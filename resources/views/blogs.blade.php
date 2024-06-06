@@ -13,12 +13,12 @@
         <div class="grid grid-cols-4 py-4 gap-3 respon1:grid-cols-3 respon2:grid-cols-2 respon3:grid-cols-1">
             @if (count($blogs) && $blogs != null)
                 @foreach ($blogs as $item)
-                    <div class="p-2 mb-4 h-fit" loading="lazy">
+                    <a href="{{ route('blog.slug',$item->slug) }}" class="p-2 mb-4 h-fit" loading="lazy" title="{{ $item->title }}">
                         <img src="{{ asset('storage/'.$item->small_thumb) }}" class="rounded-lg mb-2 w-full" alt="{{ $item->title }} Image">
                         <p class="text-gray-500 text-sm">{{ $item->category->title }} - {{ $item->created_at->format('M d, Y') }}</p>
                         <h3 class="my-3">{{ $item->title }}</h3>
-                        <a class="text-main font-semibold bg-main bg-opacity-10 py-2 px-4 rounded-md" href="{{ route('blog.slug',$item->slug) }}">Read article</a>
-                    </div>
+                        <span class="text-main font-semibold bg-main bg-opacity-10 py-2 px-4 rounded-md">Read article</span>
+                    </a>
                 @endforeach
             @else
                 <p class="text-center">No Blog exist with following name</p>

@@ -36,7 +36,7 @@ Route::get('/about-us', About::class)->name('about');
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 /* Basic POST Routes */
-Route::post('/contact', [ContactController::class, 'store']);
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.send');
 Route::post('/login', [LoginController::class, 'store']);
 Route::post('/logout', function(){
     Auth::logout();

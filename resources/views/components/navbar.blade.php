@@ -1,11 +1,11 @@
 <div class="w-full sticky top-0 z-10 shadow-sm">
     <nav class="w-full bg-white">
         <div class="max-w-[95%] m-auto flex justify-between items-center py-2 px-4">
-            <a class="flex items-center text-dark text-lg font-bold"  href="{{ route('home') }}"><img class="w-[40px] mr-2" src="{{ asset('images/logo.png') }}">WebMentor</a>
+            <a class="flex items-center text-dark text-lg font-bold"  href="{{ route('home') }}"><img class="w-[40px] mr-2" src="{{ asset('images/logo.png') }}" alt="WebMentor Logo">WebMentor</a>
             <ul class="respon1-1:hidden flex items-center">
                 <a  class="font-semibold px-5 @if(Request::is('/')) text-main @endif" href="{{ route('home') }}">Home</a>
                 <a  class="font-semibold px-5 @if(Request::is('blog')) text-main @endif" href="{{ route('blog') }}">Blogs</a>
-                <a  class="font-semibold px-5 @if(Request::is('courses')) text-main @endif" href="{{ route('courses') }}">Courses</a>
+                {{-- <a  class="font-semibold px-5 @if(Request::is('courses')) text-main @endif" href="{{ route('courses') }}">Courses</a> --}}
                 <a  class="font-semibold px-5 @if(Request::is('about')) text-main @endif" href="{{ route('about') }}">About</a>
                 <div class="relative group">
                     <nav class="font-semibold px-5">Categories <i class="fas fa-caret-down ml-1"></i></nav>

@@ -929,10 +929,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(44 55 75 / var(--tw-bg-opacity));
 }
-.bg-green-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
-}
 .bg-opacity-10{
   --tw-bg-opacity: 0.1;
 }
@@ -1063,10 +1059,6 @@ video {
 }
 .text-\[30px\]{
   font-size: 30px;
-}
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 .text-2xl{
   font-size: 1.5rem;
@@ -1520,19 +1512,6 @@ main .step_links{
 
   .respon3\:grid-cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 490px){
-
-
-  .respon3-1\:mt-1{
-    margin-top: 0.25rem;
-  }
-
-
-  .respon3-1\:flex-col{
-    flex-direction: column;
   }
 }
 

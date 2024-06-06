@@ -46,7 +46,7 @@ return [
 
         'public_disk' => [
             'driver' => 'local',
-            'root' => base_path('./public/storage'),
+            'root' => base_path('../webmentordev.online/storage'),
             'throw' => false,
         ],
 

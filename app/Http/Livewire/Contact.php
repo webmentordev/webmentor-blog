@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use App\Models\ContactsData;
 use Artesaos\SEOTools\Facades\JsonLd;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\OpenGraph;
@@ -10,6 +11,7 @@ use Artesaos\SEOTools\Facades\TwitterCard;
 
 class Contact extends Component
 {
+    public $email, $name, $subject, $message;
     public function render()
     {
         SEOMeta::setTitle('Contact | WebMentor');
@@ -40,5 +42,22 @@ class Contact extends Component
         JsonLd::addImage('/images/cover.png');
 
         return view('livewire.contact');
+    }
+
+
+    public function send(){
+        $this->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'message' => 'required',
+            'subject' => 'required'
+        ]);
+        ContactsData::create([
+            'name' => $this->name,
+            'email' => $this->email,
+            'message' => $this->message,
+            'subject' => $this->subject
+        ]);
+        return back()->with('success', 'Contact Message Sent!');
     }
 }

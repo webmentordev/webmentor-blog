@@ -4,7 +4,7 @@
         <title>Privacy Policy | WebMentor</title>
         <div class="py-5 max-w-4xl m-auto px-2 privacy-policy">
             <h1>Privacy Policy</h1>
-            <p>Last updated: August 02, 2022</p>
+            <p>Last updated: June 02, 2024</p>
             <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
                 information when You use the Service and tells You about Your privacy rights and how the law protects You.
             </p>
@@ -57,8 +57,8 @@
                     </p>
                 </li>
                 <li>
-                    <p><strong>Website</strong> refers to WebMentor, accessible from <a href="https://webmentor.online"
-                            rel="external nofollow noopener" target="_blank">https://webmentor.online</a></p>
+                    <p><strong>Website</strong> refers to WebMentor, accessible from <a href="https://webmentordev.online"
+                            rel="external nofollow noopener" target="_blank">https://webmentordev.online</a></p>
                 </li>
                 <li>
                     <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other

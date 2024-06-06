@@ -29,12 +29,12 @@
         <div class="grid grid-cols-3 py-2 gap-3 respon2:grid-cols-2 respon3:grid-cols-1">
             @if (count($related) && $related != null)
                 @foreach ($related as $item)
-                    <div class="p-2 mb-4 h-fit" data-aos="zoom-in" loading="lazy">
+                    <a href="{{ route('blog.slug', $item->slug) }}" class="p-2 mb-4 h-fit" data-aos="zoom-in" loading="lazy" title="{{ $item->title }}">
                         <img src="{{ asset('storage/'.$item->small_thumb) }}" class="rounded-lg mb-2 w-full" alt="blog">
                         <p class="text-gray-400 text-sm">{{ $item->category->title }} - {{ $item->created_at->format('M d, Y') }}</p>
                         <h3 class="my-3">{{ $item->title }}</h3>
-                        <a class="text-main font-semibold bg-main bg-opacity-10 py-2 px-4 rounded-md" href="{{ route('blog.slug', $item->slug) }}">Read article</a>
-                    </div>
+                        <span class="text-main font-semibold bg-main bg-opacity-10 py-2 px-4 rounded-md">Read article</span>
+                    </a>
                 @endforeach
             @endif
         </div>

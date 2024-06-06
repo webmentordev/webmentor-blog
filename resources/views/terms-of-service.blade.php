@@ -4,10 +4,10 @@
         <title>Terms Of Service | WebMentor</title>
         <div class="py-5 max-w-4xl m-auto px-2 service">
             <h1>Website Terms and Conditions of Use</h1>
-
+            <p>Last updated: June 02, 2024</p>
             <h2>1. Terms</h2>
 
-            <p>By accessing this Website, accessible from https://webmentor.online, you are agreeing to be bound by these
+            <p>By accessing this Website, accessible from https://webmentordev.online, you are agreeing to be bound by these
                 Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable
                 local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The
                 materials contained in this Website are protected by copyright and trade mark law.</p>

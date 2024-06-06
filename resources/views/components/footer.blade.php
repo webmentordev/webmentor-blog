@@ -27,7 +27,7 @@
         <div class="w-full">
             <h3 class="font-bold mb-3">More</h3>
             <ul class="flex flex-col">
-                <p class="text-main flex items-center mb-3"><i class="fas fa-envelope mr-1"></i> contact@webmentor.online</p>
+                <p class="text-main flex items-center mb-3"><i class="fas fa-envelope mr-1"></i> contact@webmentordev.online</p>
                 <a href="{{ route('privacy.policy') }}" class="text-blue-500 underline mr-2 mb-3">Privacy Policy</a>
                 <a href="{{ route('terms.of.service') }}" class="text-blue-500 underline mb-3">Terms Of Service</a>
             </ul>

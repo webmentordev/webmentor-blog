@@ -1,7 +1,6 @@
 @section('title', 'Contact Us - WebMentor')
 <div class="h-[80vh] flex items-center justify-center">
-    <form action="{{ route('contact') }}" method="POST" class="w-[512px] bg-gray-200 p-6 rounded-md py-[40px] shadow-sm">
-        @csrf
+    <form wire:submit='send' method="POST" class="w-[512px] bg-gray-200 p-6 rounded-md py-[40px] shadow-sm">
         <h2 class="text-3xl font-bold" style="margin: 0px 0px 5px 0px">Contact Us!</h2>
         <p class="mb-3">Feel free to contact us. If you have any advice, suggestion & if you fing any error in blog, simply write in message. Positive Comments are always welcome.</p>
         @if (session('success'))
@@ -32,12 +31,5 @@
             <p class="text-red-600 mb-2 ml-2">{{ $message }}</p>
         @enderror
         <button class="bg-main text-white py-2 px-5 block mt-2 rounded-lg mb-3">Send Message</button>
-        <div class="flex items-center justify-between bg-green-600 p-4 py-2 rounded-md respon3-1:flex-col mb-3">
-            <div class="flex items-center">
-                <img src="{{ asset('images/whatsapp.png') }}" width="40px">
-                <h3 class="mt-4 ml-2">Contact On Whatsapp</h3>
-            </div>
-            <h2 class="text-white mt-4 text-xl respon3-1:mt-1">+92-your-number</h2>
-        </div>
     </form>
 </div>
