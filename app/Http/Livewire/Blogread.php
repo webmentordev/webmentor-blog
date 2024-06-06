@@ -29,7 +29,7 @@ class Blogread extends Component
             
             SEOMeta::setTitle($blog[0]->title);
             SEOMeta::setDescription($blog[0]->description);
-            SEOMeta::setCanonical("https://webmentor.online/blog/".$blog[0]->slug);
+            SEOMeta::setCanonical("https://webmentordev.online/blog/".$blog[0]->slug);
             SEOMeta::addMeta('apple-mobile-web-app-title', $blog[0]->title);
             SEOMeta::addMeta('application-name', 'WebMentor');
             SEOMeta::addMeta('article:published_time', $blog[0]->created_at->toW3CString(), 'property');
@@ -42,14 +42,14 @@ class Blogread extends Component
             OpenGraph::addProperty('image:secure', 'http://');
             OpenGraph::addProperty('image:alt', $blog[0]->title. ' Image');
             OpenGraph::addProperty('locale', 'eu');
-            OpenGraph::setUrl("https://webmentor.online/blog/".$blog[0]->slug);
-            OpenGraph::addImage("https://webmentor.online/storage/".$blog[0]->large_thumb);
+            OpenGraph::setUrl("https://webmentordev.online/blog/".$blog[0]->slug);
+            OpenGraph::addImage("https://webmentordev.online/storage/".$blog[0]->large_thumb);
             OpenGraph::setSiteName($blog[0]->title);
             
 
             TwitterCard::setTitle($blog[0]->title);
             TwitterCard::setSite('@webmentordev');
-            TwitterCard::setImage("https://webmentor.online/storage/".$blog[0]->large_thumb);
+            TwitterCard::setImage("https://webmentordev.online/storage/".$blog[0]->large_thumb);
             TwitterCard::setDescription($blog[0]->description);
             
             JsonLd::setTitle($blog[0]->title);
